@@ -1,0 +1,9 @@
+# Used by: modules/fastp.nf
+# Trim-only QC (polyX trim + quality trim + min length). No UMI-aware dedup step
+# anywhere in this fork — see docs/adr/0006.
+name: salmon-kallisto-fastp
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - fastp=0.23.4

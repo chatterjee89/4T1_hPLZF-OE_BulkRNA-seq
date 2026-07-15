@@ -1,0 +1,8 @@
+# Used by: modules/kallisto_index.nf, modules/kallisto_quant.nf
+# kallisto 0.50.x is the current stable release line.
+name: salmon-kallisto-kallisto
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - kallisto=0.50.1

@@ -1,0 +1,11 @@
+# Used by: modules/salmon_index.nf, modules/salmon_quant.nf
+# salmon 1.10.x is the current stable 1.x line (selective-alignment / --validateMappings
+# mode). Does not need to match Plasmidsaurus's STAR version — this fork is a
+# deliberately different quantification method (docs/adr/0005), so only internal
+# pinning/reproducibility matters here.
+name: salmon-kallisto-salmon
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - salmon=1.10.3

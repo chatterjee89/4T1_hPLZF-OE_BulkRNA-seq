@@ -1,0 +1,11 @@
+# Used by: modules/build_transcriptome.nf
+# gffread extracts spliced transcript FASTA from mm10 genome + GENCODE vM25 GTF.
+# gawk (GNU awk, needed for match(..., array) 3-arg form) builds the tx2gene map
+# from the same GTF in the same process.
+name: salmon-kallisto-gffread
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - gffread=0.12.7
+  - gawk=5.3.0

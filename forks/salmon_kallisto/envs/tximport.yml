@@ -1,0 +1,12 @@
+# Used by: modules/tximport_to_gene.nf (runs bin/tximport_to_gene.R)
+# R 4.3 / Bioconductor 3.18 line. tximport summarizes both salmon's and kallisto's
+# transcript-level estimates to gene-level counts via the shared tx2gene map.
+# r-readr is used for fast tx2gene.tsv parsing.
+name: salmon-kallisto-tximport
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base=4.3.3
+  - bioconductor-tximport=1.30.0
+  - r-readr=2.1.5
