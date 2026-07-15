@@ -1,0 +1,36 @@
+# Machine-specific config
+conf/local.config
+
+# Raw/large data — never committed, always referenced by absolute path
+data/
+*.fastq.gz
+*.fq.gz
+*.bam
+*.bam.bai
+*.bam.csi
+*.fa
+*.fasta
+*.fa.gz
+*.fa.fai
+*.gtf
+*.gff3
+
+# Nextflow
+work/
+.nextflow/
+.nextflow.log*
+results/
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+renv/library/
+renv/staging/
+
+# Analysis output (regenerated, not source)
+analysis/plots/*
+!analysis/plots/.gitkeep
+
+# OS cruft
+.DS_Store

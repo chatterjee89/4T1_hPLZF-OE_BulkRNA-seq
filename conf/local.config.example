@@ -1,0 +1,17 @@
+// Copy this file to conf/local.config (gitignored) and fill in the absolute paths
+// for your machine. Referenced by nextflow.config via `includeConfig`.
+
+params {
+    data_root      = '/Users/YOURNAME/Documents/Work/Computational/BulkRNAseq/data'
+    reference_root = '/Users/YOURNAME/Documents/Work/Computational/BulkRNAseq/reference'
+
+    fastq_dir   = "${params.data_root}/BM9FTP_fastq"
+    bam_dir     = "${params.data_root}/BM9FTP_bam"
+    results_dir = "${params.data_root}/BM9FTP_results"
+
+    mm10_fasta      = "${params.reference_root}/mm10/mm10_main.fa"
+    mm10_gtf        = "${params.reference_root}/mm10/gencode.vM25.annotation.gtf"
+    hplzf_fasta     = "${params.reference_root}/hZBTB16_cDNA/hPLZF.fa"
+
+    plasmidsaurus_matrix = "${params.results_dir}/BM9FTP-expression-matrix.tsv"
+}
