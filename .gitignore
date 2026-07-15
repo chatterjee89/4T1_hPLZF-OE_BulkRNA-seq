@@ -1,5 +1,6 @@
 # Machine-specific config
 conf/local.config
+conf/local_paths.R
 
 # Raw/large data — never committed, always referenced by absolute path
 data/

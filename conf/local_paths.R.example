@@ -1,0 +1,6 @@
+# Copy this file to conf/local_paths.R (gitignored) and fill in the absolute
+# paths for your machine. Mirrors conf/local.config's role (machine-specific
+# paths kept out of git) but in a format the analysis/ R scripts can `source()`
+# directly, since conf/local.config is Nextflow/Groovy syntax.
+
+PLASMIDSAURUS_MATRIX <- "/Users/YOURNAME/Documents/Work/Computational/BulkRNAseq/data/BM9FTP_results/BM9FTP-expression-matrix.tsv"
