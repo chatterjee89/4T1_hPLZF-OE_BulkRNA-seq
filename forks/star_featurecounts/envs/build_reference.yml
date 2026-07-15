@@ -1,0 +1,12 @@
+name: star_featurecounts-build_reference
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  # STAR v2.7.11 exactly ("2.7.11") is not published on bioconda — only the
+  # lettered patch releases 2.7.11a / 2.7.11b exist. Substituting 2.7.11b (the
+  # newer of the two, same 2.7.11 line as Plasmidsaurus's methods.txt).
+  - star=2.7.11b
+  # samtools faidx is used here to measure the hPLZF contig length so the
+  # synthetic GTF entry's end coordinate is computed, not hardcoded.
+  - samtools=1.22.1

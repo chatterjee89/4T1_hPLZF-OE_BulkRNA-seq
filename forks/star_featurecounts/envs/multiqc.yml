@@ -1,0 +1,7 @@
+name: star_featurecounts-multiqc
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  # Exact match to Plasmidsaurus's methods.txt.
+  - multiqc=1.32

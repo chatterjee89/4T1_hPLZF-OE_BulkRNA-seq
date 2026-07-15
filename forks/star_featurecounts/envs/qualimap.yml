@@ -1,0 +1,7 @@
+name: star_featurecounts-qualimap
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  # Exact match to Plasmidsaurus's methods.txt.
+  - qualimap=2.3

@@ -1,0 +1,12 @@
+name: star_featurecounts-ucsc_tools
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  # Not part of Plasmidsaurus's pinned tool list (methods.txt doesn't mention
+  # a GTF->BED12 conversion step explicitly) -- these are UCSC "kent" utilities
+  # used only internally to produce the BED12 that RSeQC's infer_experiment.py
+  # and read_distribution.py require. Pinned to the latest available bioconda
+  # build (482) since no vendor version to match.
+  - ucsc-gtftogenepred=482
+  - ucsc-genepredtobed=482

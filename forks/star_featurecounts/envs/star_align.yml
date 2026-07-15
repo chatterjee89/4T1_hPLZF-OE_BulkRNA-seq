@@ -1,0 +1,9 @@
+name: star_featurecounts-star_align
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  # See build_reference.yml for the 2.7.11 -> 2.7.11b substitution note; the
+  # aligner used to build the genome index and the one used to align must be
+  # the same build, so this is intentionally identical to build_reference.yml.
+  - star=2.7.11b

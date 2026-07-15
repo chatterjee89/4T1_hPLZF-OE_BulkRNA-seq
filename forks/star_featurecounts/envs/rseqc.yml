@@ -1,0 +1,10 @@
+name: star_featurecounts-rseqc
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  # Exact match to Plasmidsaurus's methods.txt. Shared by both the
+  # infer_strandedness (infer_experiment.py) and rseqc_read_distribution
+  # (read_distribution.py) processes -- same tool, same version, no reason to
+  # duplicate the spec across two files.
+  - rseqc=5.0.4
