@@ -1,5 +1,7 @@
 # 4T1_hPLZF-OE_BulkRNA-seq
 
+> AI tools were used in developing this repository — see [AI_DISCLOSURE.md](AI_DISCLOSURE.md) for details.
+
 Bulk RNA-seq analysis of 4T1 mouse mammary tumor cells with stable overexpression of
 human ZBTB16/PLZF (hPLZF) vs. empty-vector (EV) control, sampled across 4 timepoints
 (D0–D3, 3 replicates each; 24 samples total, single-end reads with UMIs).
