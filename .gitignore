@@ -35,3 +35,7 @@ analysis/plots/*
 
 # OS cruft
 .DS_Store
+
+# Local editor-assistant config (kept locally, not published)
+CLAUDE.md
+.claude/
